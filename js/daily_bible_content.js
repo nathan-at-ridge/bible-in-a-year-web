@@ -9,7 +9,7 @@ let month = d.toLocaleString('default', {month: 'long'})
 let year = d.getFullYear();
 document.getElementById("date").innerHTML = month.concat(" ", day, ", ", year);
 //determine what day we're on in the reading plan
-let jan1 = new Date('01/01/2022');
+let jan1 = new Date('01/01/2023');
 let day_in_plan = (d.getTime() - jan1.getTime()) / (1000 * 3600 * 24);
 day_in_plan = Math.floor(day_in_plan); //remove remainder from quotient
 if (day_in_plan < 0) { //if plan has not yet begun
