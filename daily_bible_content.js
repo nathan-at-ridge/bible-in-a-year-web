@@ -1,4 +1,4 @@
-import bible_content from 'bible_content.json' assert {type: 'json'};
+import bible_content from './bible_content.json' assert {type: 'json'};
 //get today's date and insert date into webpage
 const d = new Date();
 let day = d.getDate();
