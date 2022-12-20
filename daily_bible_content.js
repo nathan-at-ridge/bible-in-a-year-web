@@ -1,4 +1,4 @@
-import bible_content from 'https://dq5pwpg1q8ru0.cloudfront.net/2022/12/19/18/52/31/8ca2752f-b458-4e51-9622-852a652ee4b5/bible_content.json' assert {type: 'json'};
+import bible_content from 'https://github.com/nathan-at-ridge/bible-in-a-year-web/raw/main/bible_content.json' assert {type: 'json'};
 //get today's date and insert date into webpage
 const d = new Date();
 let day = d.getDate();
