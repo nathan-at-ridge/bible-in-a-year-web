@@ -12,7 +12,7 @@ document.getElementById("date").innerHTML = month.concat(" ", day, ", ", year);
 let jan1 = new Date('01/01/2023');
 let day_in_plan = (d.getTime() - jan1.getTime()) / (1000 * 3600 * 24);
 day_in_plan = Math.floor(day_in_plan); //remove remainder from quotient
-day_in_plan = 1;
+day_in_plan = 2;
 if (day_in_plan < 0) { //if plan has not yet begun
     document.getElementById("date").style.display = "none";
     document.getElementById("readings_wrapper").style.display = "none";
