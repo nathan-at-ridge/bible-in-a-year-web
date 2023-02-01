@@ -3004,7 +3004,7 @@ let day = d.getDate();
 let month = d.toLocaleString('default', {month: 'long'})
 let year = d.getFullYear();
 document.getElementById("date").innerHTML = month.concat(" ", day, ", ", year);
-document.getElementById("bookmark").innerHTML = '<a href="'.concat(bookmark[month],'">',month," bookmark</a>");
+document.getElementById("bookmark").innerHTML = '<a href="'.concat(bookmark[month],'" target="_blank">',month," bookmark</a>");
 document.getElementById("prayer_calendar").href = prayer_calendar[month]
 //determine what day we're on in the reading plan
 let jan1 = new Date('01/01/2023');
