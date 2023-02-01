@@ -2985,6 +2985,19 @@ const bookmark = {"January": "https://ridgechurch.ca/df_media/W1siZiIsIjIwMjMvMD
 "November": "https://ridgechurch.ca/df_media/W1siZiIsIjIwMjMvMDEvMDkvMTIvNTcvMDUvYWQ1NzI0YTUtYjMwYi00YjQxLTg0ZGUtY2EyY2E2YzNjYTAxL3BkZl9ub3ZlbWJlci5wZGYiXV0/pdf_november.pdf?sha=3436089b5762ab6b",
 "December": "https://ridgechurch.ca/df_media/W1siZiIsIjIwMjMvMDEvMDkvMTIvNTcvMDYvNmI4MDdhODYtZGViNi00NzBmLTgwMGQtMzI4OGI4OWZiYjg4L3BkZl9kZWNlbWJlci5wZGYiXV0/pdf_december.pdf?sha=947b8d72fbb10bab"
 }
+const prayer_calendar = {"January": "",
+"February": "https://dq5pwpg1q8ru0.cloudfront.net/2023/01/30/10/27/25/e079761b-9c3d-47a3-b774-b0e58f857ad3/Prayer%20Newsletter%20Feb%202023.pdf",
+"March": "",
+"April": "",
+"May": "",
+"June": "",
+"July": "",
+"August": "",
+"September": "",
+"October": "",
+"November": "",
+"December": ""
+}
 //get today's date and insert date into webpage
 const d = new Date();
 let day = d.getDate();
@@ -2992,6 +3005,7 @@ let month = d.toLocaleString('default', {month: 'long'})
 let year = d.getFullYear();
 document.getElementById("date").innerHTML = month.concat(" ", day, ", ", year);
 document.getElementById("bookmark").innerHTML = '<a href="'.concat(bookmark[month],'">',month," bookmark</a>");
+document.getElementById("prayer_calendar").href = prayer_calendar[month]
 //determine what day we're on in the reading plan
 let jan1 = new Date('01/01/2023');
 let day_in_plan = (d.getTime() - jan1.getTime()) / (1000 * 3600 * 24);
